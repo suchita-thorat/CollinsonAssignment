@@ -125,4 +125,38 @@ public class BikeStepDef {
     		Assert.assertTrue(false);
     }
     
+    @When("^Send a GET HTTP request with query paramters for filtering$")
+    public void send_a_GET_HTTP_request_with_query_paramters_for_filtering() {
+    	response = httpRequest.queryParam("fields","id,name").get("/networks");
+    	
+		int statusCode = response.getStatusCode();
+		// Assertion for 200 response code of GET request
+		Assert.assertEquals(statusCode, 200);
+    }
+
+    @Then("^I receive only requested fields in response$")
+    public void i_receive_only_requested_fields_in_response() {
+		responseBody = response.getBody();
+
+		JSONObject jsonObject = new JSONObject(responseBody.asString());
+		JSONArray jsonArray = jsonObject.getJSONArray("networks");
+		for (int i = 0; i < jsonArray.length(); i++) {
+			JSONObject json = jsonArray.getJSONObject(i);
+			//Validation for requested fields
+			Assert.assertTrue(!json.getString("id").isEmpty());
+			Assert.assertTrue(!json.getString("name").isEmpty());
+			
+			//Validation for href field which is not requested
+			Exception exception = null;
+			try{
+				json.getString("href");
+			}
+			catch (Exception ex){
+			    exception = ex;
+			}
+			Assert.assertNotNull(exception);
+		}
+		
+    }
+    
 }

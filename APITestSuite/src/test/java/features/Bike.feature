@@ -5,7 +5,7 @@ Background:
 	When I Set request HEADER
     
 @PositiveTest
- Scenario: Get Bike Record
+ Scenario: Get Bike information
     And Send a GET HTTP request 
 	Then I receive valid Response Code 200
 	And Response BODY is non-empty
