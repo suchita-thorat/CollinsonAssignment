@@ -1,22 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: runner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 36, Failures: 0, Errors: 6, Skipped: 5, Time elapsed: 4.719 s <<< FAILURE! - in runner.TestRunner
-And search response body for city Frankfurt(| Frankfurt | DE | 50.1072 | 8.66375 |)  Time elapsed: 0.005 s  <<< ERROR!
-org.json.JSONException: JSONObject["location"] not found.
-
-| Frankfurt | DE | 50.1072 | 8.66375 |  Time elapsed: 0.005 s  <<< ERROR!
-org.json.JSONException: JSONObject["location"] not found.
-
-And search response body for city Moscow(| Moscow | RU | 55.75 | 37.616667 |)  Time elapsed: 0 s  <<< ERROR!
-org.json.JSONException: JSONObject["location"] not found.
-
-| Moscow | RU | 55.75 | 37.616667 |  Time elapsed: 0 s  <<< ERROR!
-org.json.JSONException: JSONObject["location"] not found.
-
-And search response body for non listed city "Mumbai"(Scenario: Try to get Country of non listed city)  Time elapsed: 0.001 s  <<< ERROR!
-org.json.JSONException: JSONObject["location"] not found.
-
-Scenario: Try to get Country of non listed city  Time elapsed: 0.001 s  <<< ERROR!
-org.json.JSONException: JSONObject["location"] not found.
-
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.058 s - in runner.TestRunner
