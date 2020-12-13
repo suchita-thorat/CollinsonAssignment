@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.TestRunner" time="8.058" tests="36" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="runner.TestRunner" time="7.748" tests="36" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="GB"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\SUCHIT~1.THO\AppData\Local\Temp\surefire7502216044287185108\surefirebooter7635043916451044691.jar C:\Users\Suchita.Thorat\AppData\Local\Temp\surefire7502216044287185108 2020-12-13T14-57-04_645-jvmRun1 surefire3142583002071056499tmp surefire_05480381015011276812tmp"/>
+    <property name="sun.java.command" value="C:\Users\SUCHIT~1.THO\AppData\Local\Temp\surefire6480316388979222877\surefirebooter6899027962300494878.jar C:\Users\Suchita.Thorat\AppData\Local\Temp\surefire6480316388979222877 2020-12-13T14-59-12_960-jvmRun1 surefire5990630693717254582tmp surefire_07971935785065964902tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\Suchita.Thorat\git\CollinsonAssignment\APITestSuite\target\test-classes;C:\Users\Suchita.Thorat\git\CollinsonAssignment\APITestSuite\target\classes;C:\Users\Suchita.Thorat\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Suchita.Thorat\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Suchita.Thorat\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\Suchita.Thorat\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\Suchita.Thorat\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\Suchita.Thorat\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\Suchita.Thorat\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\Suchita.Thorat\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Suchita.Thorat\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\Suchita.Thorat\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\Suchita.Thorat\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Suchita.Thorat\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Suchita.Thorat\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\Suchita.Thorat\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\Suchita.Thorat\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\Suchita.Thorat\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\Suchita.Thorat\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\Suchita.Thorat\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\Suchita.Thorat\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\Suchita.Thorat\.m2\repository\io\rest-assured\json-path\4.3.1\json-path-4.3.1.jar;C:\Users\Suchita.Thorat\.m2\repository\org\codehaus\groovy\groovy-json\3.0.3\groovy-json-3.0.3.jar;C:\Users\Suchita.Thorat\.m2\repository\io\rest-assured\rest-assured-common\4.3.1\rest-assured-common-4.3.1.jar;C:\Users\Suchita.Thorat\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\Suchita.Thorat\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\Suchita.Thorat\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\Suchita.Thorat\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\Suchita.Thorat\.m2\repository\info\cukes\cucumber-junit\1.2.5\cucumber-junit-1.2.5.jar;C:\Users\Suchita.Thorat\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\Suchita.Thorat\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\Suchita.Thorat\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\Suchita.Thorat\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\Suchita.Thorat\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\Suchita.Thorat\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\Suchita.Thorat\.m2\repository\org\json\json\20201115\json-20201115.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Suchita.Thorat"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\SUCHIT~1.THO\AppData\Local\Temp\surefire7502216044287185108\surefirebooter7635043916451044691.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\SUCHIT~1.THO\AppData\Local\Temp\surefire6480316388979222877\surefirebooter6899027962300494878.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_271\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,13 +60,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="Given I Set GET Bike api endpoint" classname="Scenario: Get Bike information" time="0.002"/>
+  <testcase name="Given I Set GET Bike api endpoint" classname="Scenario: Get Bike information" time="0.001"/>
   <testcase name="When I Set request HEADER" classname="Scenario: Get Bike information" time="0"/>
-  <testcase name="And Send a GET HTTP request" classname="Scenario: Get Bike information" time="0.002"/>
-  <testcase name="Then I receive valid Response Code 200" classname="Scenario: Get Bike information" time="0.001"/>
-  <testcase name="And Response BODY is non-empty" classname="Scenario: Get Bike information" time="0.001"/>
-  <testcase name="Scenario: Get Bike information" classname="Scenario: Get Bike information" time="0.001"/>
-  <testcase name="Given I Set GET Bike api endpoint" classname="| Frankfurt | DE | 50.1072 | 8.66375 |" time="0.001"/>
+  <testcase name="And Send a GET HTTP request" classname="Scenario: Get Bike information" time="0"/>
+  <testcase name="Then I receive valid Response Code 200" classname="Scenario: Get Bike information" time="0"/>
+  <testcase name="And Response BODY is non-empty" classname="Scenario: Get Bike information" time="0"/>
+  <testcase name="Scenario: Get Bike information" classname="Scenario: Get Bike information" time="0"/>
+  <testcase name="Given I Set GET Bike api endpoint" classname="| Frankfurt | DE | 50.1072 | 8.66375 |" time="0"/>
   <testcase name="When I Set request HEADER" classname="| Frankfurt | DE | 50.1072 | 8.66375 |" time="0"/>
   <testcase name="And Send a GET HTTP request" classname="| Frankfurt | DE | 50.1072 | 8.66375 |" time="0"/>
   <testcase name="And search response body for city Frankfurt" classname="| Frankfurt | DE | 50.1072 | 8.66375 |" time="0"/>
@@ -84,8 +84,8 @@
   <testcase name="When I Set request HEADER" classname="Scenario: Try to get Country of non listed city" time="0"/>
   <testcase name="And Send a GET HTTP request" classname="Scenario: Try to get Country of non listed city" time="0"/>
   <testcase name="And search response body for non listed city &quot;Mumbai&quot;" classname="Scenario: Try to get Country of non listed city" time="0"/>
-  <testcase name="Then no Country returned" classname="Scenario: Try to get Country of non listed city" time="0"/>
-  <testcase name="Scenario: Try to get Country of non listed city" classname="Scenario: Try to get Country of non listed city" time="0"/>
+  <testcase name="Then no Country returned" classname="Scenario: Try to get Country of non listed city" time="0.004"/>
+  <testcase name="Scenario: Try to get Country of non listed city" classname="Scenario: Try to get Country of non listed city" time="0.004"/>
   <testcase name="Given I Set GET Bike api endpoint" classname="Scenario: Field Filtering in GET request" time="0"/>
   <testcase name="When I Set request HEADER" classname="Scenario: Field Filtering in GET request" time="0"/>
   <testcase name="And Send a GET HTTP request with query paramters for filtering" classname="Scenario: Field Filtering in GET request" time="0"/>
@@ -95,5 +95,5 @@
   <testcase name="When I Set request HEADER" classname="Scenario: Incorrect URL in GET request" time="0"/>
   <testcase name="And Send a GET HTTP request with incorrect url" classname="Scenario: Incorrect URL in GET request" time="0"/>
   <testcase name="Then I should receive Not found page with 404 response code" classname="Scenario: Incorrect URL in GET request" time="0"/>
-  <testcase name="Scenario: Incorrect URL in GET request" classname="Scenario: Incorrect URL in GET request" time="0"/>
+  <testcase name="Scenario: Incorrect URL in GET request" classname="Scenario: Incorrect URL in GET request" time="0.001"/>
 </testsuite>
