@@ -4,7 +4,7 @@ Steps to run tests from command line:
 2. Open command prompt
 3. Go to project path (until the project root directory APITestSuite) 
 4. mvn clean test 
-e.g. C:\Users\Suchita.Thorat\git\CollinsonAssignment\APITestSuite>mvn clean test
+e.g. C:\Users\Suchita.Thorat\git\CollinsonAssignment\APITestSuite>mvn test
 -------------
 OR Run using IDE:
 Run Junit runner file TestRunner.java in chosen IDE
