@@ -27,14 +27,14 @@ formatter.match({
   "location": "BikeStepDef.i_Set_GET_Bike_api_endpoint()"
 });
 formatter.result({
-  "duration": 957087146,
+  "duration": 1002381882,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.i_Set_request_HEADER()"
 });
 formatter.result({
-  "duration": 234457460,
+  "duration": 209538360,
   "status": "passed"
 });
 formatter.scenario({
@@ -70,7 +70,7 @@ formatter.match({
   "location": "BikeStepDef.send_a_GET_HTTP_request()"
 });
 formatter.result({
-  "duration": 2414343723,
+  "duration": 3009908647,
   "status": "passed"
 });
 formatter.match({
@@ -83,14 +83,14 @@ formatter.match({
   "location": "BikeStepDef.i_receive_valid_Response_Code(int)"
 });
 formatter.result({
-  "duration": 4909811,
+  "duration": 2477880,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.response_BODY_is_non_empty()"
 });
 formatter.result({
-  "duration": 28228136,
+  "duration": 26579772,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -187,14 +187,14 @@ formatter.match({
   "location": "BikeStepDef.i_Set_GET_Bike_api_endpoint()"
 });
 formatter.result({
-  "duration": 32820,
+  "duration": 54563,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.i_Set_request_HEADER()"
 });
 formatter.result({
-  "duration": 411065,
+  "duration": 540292,
   "status": "passed"
 });
 formatter.scenario({
@@ -245,7 +245,7 @@ formatter.match({
   "location": "BikeStepDef.send_a_GET_HTTP_request()"
 });
 formatter.result({
-  "duration": 148084074,
+  "duration": 209537539,
   "status": "passed"
 });
 formatter.match({
@@ -258,7 +258,7 @@ formatter.match({
   "location": "BikeStepDef.search_response_body_for_city(String)"
 });
 formatter.result({
-  "duration": 44841826,
+  "duration": 34809695,
   "status": "passed"
 });
 formatter.match({
@@ -271,7 +271,7 @@ formatter.match({
   "location": "BikeStepDef.it_should_be_in_country(String)"
 });
 formatter.result({
-  "duration": 75896,
+  "duration": 82049,
   "status": "passed"
 });
 formatter.match({
@@ -288,7 +288,7 @@ formatter.match({
   "location": "BikeStepDef.i_get_their_corresponding_and_in_response(String,String)"
 });
 formatter.result({
-  "duration": 133330,
+  "duration": 127176,
   "status": "passed"
 });
 formatter.background({
@@ -312,14 +312,14 @@ formatter.match({
   "location": "BikeStepDef.i_Set_GET_Bike_api_endpoint()"
 });
 formatter.result({
-  "duration": 36102,
+  "duration": 39384,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.i_Set_request_HEADER()"
 });
 formatter.result({
-  "duration": 309325,
+  "duration": 285941,
   "status": "passed"
 });
 formatter.scenario({
@@ -370,7 +370,7 @@ formatter.match({
   "location": "BikeStepDef.send_a_GET_HTTP_request()"
 });
 formatter.result({
-  "duration": 141089397,
+  "duration": 204876335,
   "status": "passed"
 });
 formatter.match({
@@ -383,7 +383,7 @@ formatter.match({
   "location": "BikeStepDef.search_response_body_for_city(String)"
 });
 formatter.result({
-  "duration": 10679497,
+  "duration": 21148948,
   "status": "passed"
 });
 formatter.match({
@@ -396,7 +396,7 @@ formatter.match({
   "location": "BikeStepDef.it_should_be_in_country(String)"
 });
 formatter.result({
-  "duration": 60717,
+  "duration": 65640,
   "status": "passed"
 });
 formatter.match({
@@ -413,7 +413,7 @@ formatter.match({
   "location": "BikeStepDef.i_get_their_corresponding_and_in_response(String,String)"
 });
 formatter.result({
-  "duration": 108715,
+  "duration": 108304,
   "status": "passed"
 });
 formatter.background({
@@ -437,14 +437,14 @@ formatter.match({
   "location": "BikeStepDef.i_Set_GET_Bike_api_endpoint()"
 });
 formatter.result({
-  "duration": 38153,
+  "duration": 34050,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.i_Set_request_HEADER()"
 });
 formatter.result({
-  "duration": 322453,
+  "duration": 299068,
   "status": "passed"
 });
 formatter.scenario({
@@ -480,7 +480,7 @@ formatter.match({
   "location": "BikeStepDef.send_a_GET_HTTP_request()"
 });
 formatter.result({
-  "duration": 127372037,
+  "duration": 168431814,
   "status": "passed"
 });
 formatter.match({
@@ -493,14 +493,14 @@ formatter.match({
   "location": "BikeStepDef.search_response_body_for_non_listed_city(String)"
 });
 formatter.result({
-  "duration": 7865216,
+  "duration": 8215156,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.no_Country_returned()"
 });
 formatter.result({
-  "duration": 34050,
+  "duration": 36512,
   "status": "passed"
 });
 formatter.background({
@@ -524,14 +524,14 @@ formatter.match({
   "location": "BikeStepDef.i_Set_GET_Bike_api_endpoint()"
 });
 formatter.result({
-  "duration": 37743,
+  "duration": 48819,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.i_Set_request_HEADER()"
 });
 formatter.result({
-  "duration": 364297,
+  "duration": 1413294,
   "status": "passed"
 });
 formatter.scenario({
@@ -562,14 +562,89 @@ formatter.match({
   "location": "BikeStepDef.send_a_GET_HTTP_request_with_query_paramters_for_filtering()"
 });
 formatter.result({
-  "duration": 168925339,
+  "duration": 299946914,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.i_receive_only_requested_fields_in_response()"
 });
 formatter.result({
-  "duration": 11821619,
+  "duration": 7297437,
+  "status": "passed"
+});
+formatter.background({
+  "line": 3,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.step({
+  "line": 4,
+  "name": "I Set GET Bike api endpoint",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 5,
+  "name": "I Set request HEADER",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "BikeStepDef.i_Set_GET_Bike_api_endpoint()"
+});
+formatter.result({
+  "duration": 38153,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BikeStepDef.i_Set_request_HEADER()"
+});
+formatter.result({
+  "duration": 262147,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 37,
+  "name": "Incorrect URL in GET request",
+  "description": "",
+  "id": "validate-bike-api;incorrect-url-in-get-request",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 36,
+      "name": "@NegativeTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 38,
+  "name": "Send a GET HTTP request with incorrect url",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 39,
+  "name": "I should receive Not found page with 404 response code",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "BikeStepDef.send_a_GET_HTTP_request_with_incorrect_url()"
+});
+formatter.result({
+  "duration": 33103077,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "404",
+      "offset": 37
+    }
+  ],
+  "location": "BikeStepDef.i_should_receive_Not_found_page_with_response_code(int)"
+});
+formatter.result({
+  "duration": 443475,
   "status": "passed"
 });
 });

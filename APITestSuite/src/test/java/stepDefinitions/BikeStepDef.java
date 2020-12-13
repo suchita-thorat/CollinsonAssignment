@@ -38,10 +38,8 @@ public class BikeStepDef {
 
 	@When("^Send a GET HTTP request$")
 	public void send_a_GET_HTTP_request() {
-		// Make a request to the server by specifying the method Type and the method
-		// URL.
-		// This will return the Response from the server. Store the response in a
-		// variable.
+		// Make a request to the server by specifying the method Type and the method URL
+		// This will return the Response from the server. Store the response in a variable.
 		response = httpRequest.request(Method.GET, "/networks");
 	}
 
@@ -72,11 +70,10 @@ public class BikeStepDef {
 			JSONObject json = jsonArray.getJSONObject(i);
 			JSONObject locationJson = json.getJSONObject("location");
 			String ExtractedCity = locationJson.getString("city");
-			if (ExtractedCity.equalsIgnoreCase(cityname))
-			{
-			  ExtractedCountry = locationJson.getString("country");
-			  ExtractedLatitude = locationJson.getDouble("latitude");
-			  ExtractedLongitude = locationJson.getDouble("longitude");
+			if (ExtractedCity.equalsIgnoreCase(cityname)) {
+				ExtractedCountry = locationJson.getString("country");
+				ExtractedLatitude = locationJson.getDouble("latitude");
+				ExtractedLongitude = locationJson.getDouble("longitude");
 			}
 		}
 	}
@@ -85,78 +82,97 @@ public class BikeStepDef {
 	public void it_should_be_in_country(String countryname) {
 		// Validate the country name
 		Assert.assertEquals(countryname, ExtractedCountry);
-		
+
 	}
 
-    @And("^I get their corresponding (.+) and (.+) in response$")
-    public void i_get_their_corresponding_and_in_response(String latitude, String longitude) {
+	@And("^I get their corresponding (.+) and (.+) in response$")
+	public void i_get_their_corresponding_and_in_response(String latitude, String longitude) {
 		Assert.assertEquals(latitude, Double.toString(ExtractedLatitude));
 		Assert.assertEquals(longitude, Double.toString(ExtractedLongitude));
 	}
 
-    @When("^search response body for non listed city \"([^\"]*)\"$")
-    public void search_response_body_for_non_listed_city(String arg1) {
+	@When("^search response body for non listed city \"([^\"]*)\"$")
+	public void search_response_body_for_non_listed_city(String arg1) {
 		int statusCode = response.getStatusCode();
 		// Assertion for 200 response code
 		Assert.assertEquals(statusCode, 200);
 		responseBody = response.getBody();
 
+		// Extracting Location Json object from response body
 		JSONObject jsonObject = new JSONObject(responseBody.asString());
 		JSONArray jsonArray = jsonObject.getJSONArray("networks");
 		for (int i = 0; i < jsonArray.length(); i++) {
 			JSONObject json = jsonArray.getJSONObject(i);
 			JSONObject locationJson = json.getJSONObject("location");
 			String ExtractedCity = locationJson.getString("city");
-			if (ExtractedCity.equalsIgnoreCase(arg1))
-			{
-			  ExtractedCountry = locationJson.getString("country");
-			  ExtractedLatitude = locationJson.getDouble("latitude");
-			  ExtractedLongitude = locationJson.getDouble("longitude");
+			if (ExtractedCity.equalsIgnoreCase(arg1)) {
+				ExtractedCountry = locationJson.getString("country");
+				ExtractedLatitude = locationJson.getDouble("latitude");
+				ExtractedLongitude = locationJson.getDouble("longitude");
 			}
 		}
-    }
- 
-    @Then("^no Country returned$")
-    public void no_Country_returned() {
-        // Assertion for null country if non listed city Mumbai searched
-    	if (ExtractedCountry == null)
-    		Assert.assertTrue(true);
-    	else
-    		Assert.assertTrue(false);
-    }
-    
-    @When("^Send a GET HTTP request with query paramters for filtering$")
-    public void send_a_GET_HTTP_request_with_query_paramters_for_filtering() {
-    	response = httpRequest.queryParam("fields","id,name").get("/networks");
-    	
-		int statusCode = response.getStatusCode();
-		// Assertion for 200 response code of GET request
-		Assert.assertEquals(statusCode, 200);
-    }
+	}
 
-    @Then("^I receive only requested fields in response$")
-    public void i_receive_only_requested_fields_in_response() {
+	@Then("^no Country returned$")
+	public void no_Country_returned() {
+		// Assertion for null country if non listed city Mumbai searched
+		if (ExtractedCountry == null)
+			Assert.assertTrue(true);
+		else
+			Assert.assertTrue(false);
+	}
+
+	@When("^Send a GET HTTP request with query paramters for filtering$")
+	public void send_a_GET_HTTP_request_with_query_paramters_for_filtering() {
+		response = httpRequest.queryParam("fields", "id,name").get("/networks");
+
+		int statusCode = response.getStatusCode();
+		// Assertion for successful response code of GET request
+		Assert.assertEquals(statusCode, 200);
+	}
+
+	@Then("^I receive only requested fields in response$")
+	public void i_receive_only_requested_fields_in_response() {
 		responseBody = response.getBody();
 
 		JSONObject jsonObject = new JSONObject(responseBody.asString());
 		JSONArray jsonArray = jsonObject.getJSONArray("networks");
 		for (int i = 0; i < jsonArray.length(); i++) {
 			JSONObject json = jsonArray.getJSONObject(i);
-			//Validation for requested fields
+			// Validation for requested fields
 			Assert.assertTrue(!json.getString("id").isEmpty());
 			Assert.assertTrue(!json.getString("name").isEmpty());
-			
-			//Validation for href field which is not requested
+
+			// Validation for href field which is not requested
 			Exception exception = null;
-			try{
+			try {
 				json.getString("href");
-			}
-			catch (Exception ex){
-			    exception = ex;
+			} catch (Exception ex) {
+				exception = ex;
 			}
 			Assert.assertNotNull(exception);
 		}
+
+	}
+
+	@When("^Send a GET HTTP request with incorrect url$")
+	public void send_a_GET_HTTP_request_with_incorrect_url() {
+		// Send GET Http request with incorrect url
+		response = httpRequest.request(Method.GET, "/networkstest");
+	}
+
+	@Then("^I should receive Not found page with (\\d+) response code$")
+	public void i_should_receive_Not_found_page_with_response_code(int arg1) throws Throwable {
+		int statusCode = response.getStatusCode();
+		// Assertion for 404 response code of GET request
+		Assert.assertEquals(statusCode, arg1);
 		
-    }
-    
+		//Split response status line to extract response message
+		String statusLine = response.getStatusLine();
+		String array2[]= statusLine.split(" ", 3);
+		
+		//Assertion for response message
+		Assert.assertEquals("NOT FOUND",array2[2]);	
+	}
+
 }

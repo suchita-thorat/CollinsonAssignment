@@ -33,5 +33,11 @@ Examples:
     And Send a GET HTTP request with query paramters for filtering
 	Then I receive only requested fields in response
 	
+@NegativeTest
+ Scenario: Incorrect URL in GET request
+    And Send a GET HTTP request with incorrect url
+	Then I should receive Not found page with 404 response code 
+
+	
 	
 		
