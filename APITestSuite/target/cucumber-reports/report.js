@@ -27,14 +27,14 @@ formatter.match({
   "location": "BikeStepDef.i_Set_GET_Bike_api_endpoint()"
 });
 formatter.result({
-  "duration": 1002381882,
+  "duration": 927158545,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.i_Set_request_HEADER()"
 });
 formatter.result({
-  "duration": 209538360,
+  "duration": 235568812,
   "status": "passed"
 });
 formatter.scenario({
@@ -70,7 +70,7 @@ formatter.match({
   "location": "BikeStepDef.send_a_GET_HTTP_request()"
 });
 formatter.result({
-  "duration": 3009908647,
+  "duration": 2633446123,
   "status": "passed"
 });
 formatter.match({
@@ -83,14 +83,14 @@ formatter.match({
   "location": "BikeStepDef.i_receive_valid_Response_Code(int)"
 });
 formatter.result({
-  "duration": 2477880,
+  "duration": 4842121,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.response_BODY_is_non_empty()"
 });
 formatter.result({
-  "duration": 26579772,
+  "duration": 28460745,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -187,14 +187,14 @@ formatter.match({
   "location": "BikeStepDef.i_Set_GET_Bike_api_endpoint()"
 });
 formatter.result({
-  "duration": 54563,
+  "duration": 30768,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.i_Set_request_HEADER()"
 });
 formatter.result({
-  "duration": 540292,
+  "duration": 368400,
   "status": "passed"
 });
 formatter.scenario({
@@ -245,7 +245,7 @@ formatter.match({
   "location": "BikeStepDef.send_a_GET_HTTP_request()"
 });
 formatter.result({
-  "duration": 209537539,
+  "duration": 135056745,
   "status": "passed"
 });
 formatter.match({
@@ -258,7 +258,7 @@ formatter.match({
   "location": "BikeStepDef.search_response_body_for_city(String)"
 });
 formatter.result({
-  "duration": 34809695,
+  "duration": 54463301,
   "status": "passed"
 });
 formatter.match({
@@ -271,7 +271,7 @@ formatter.match({
   "location": "BikeStepDef.it_should_be_in_country(String)"
 });
 formatter.result({
-  "duration": 82049,
+  "duration": 92305,
   "status": "passed"
 });
 formatter.match({
@@ -288,7 +288,7 @@ formatter.match({
   "location": "BikeStepDef.i_get_their_corresponding_and_in_response(String,String)"
 });
 formatter.result({
-  "duration": 127176,
+  "duration": 132509,
   "status": "passed"
 });
 formatter.background({
@@ -312,14 +312,14 @@ formatter.match({
   "location": "BikeStepDef.i_Set_GET_Bike_api_endpoint()"
 });
 formatter.result({
-  "duration": 39384,
+  "duration": 35281,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.i_Set_request_HEADER()"
 });
 formatter.result({
-  "duration": 285941,
+  "duration": 318350,
   "status": "passed"
 });
 formatter.scenario({
@@ -370,7 +370,7 @@ formatter.match({
   "location": "BikeStepDef.send_a_GET_HTTP_request()"
 });
 formatter.result({
-  "duration": 204876335,
+  "duration": 161973327,
   "status": "passed"
 });
 formatter.match({
@@ -383,7 +383,7 @@ formatter.match({
   "location": "BikeStepDef.search_response_body_for_city(String)"
 });
 formatter.result({
-  "duration": 21148948,
+  "duration": 8990929,
   "status": "passed"
 });
 formatter.match({
@@ -396,7 +396,7 @@ formatter.match({
   "location": "BikeStepDef.it_should_be_in_country(String)"
 });
 formatter.result({
-  "duration": 65640,
+  "duration": 59486,
   "status": "passed"
 });
 formatter.match({
@@ -413,7 +413,7 @@ formatter.match({
   "location": "BikeStepDef.i_get_their_corresponding_and_in_response(String,String)"
 });
 formatter.result({
-  "duration": 108304,
+  "duration": 98048,
   "status": "passed"
 });
 formatter.background({
@@ -437,14 +437,14 @@ formatter.match({
   "location": "BikeStepDef.i_Set_GET_Bike_api_endpoint()"
 });
 formatter.result({
-  "duration": 34050,
+  "duration": 38973,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.i_Set_request_HEADER()"
 });
 formatter.result({
-  "duration": 299068,
+  "duration": 288813,
   "status": "passed"
 });
 formatter.scenario({
@@ -480,7 +480,7 @@ formatter.match({
   "location": "BikeStepDef.send_a_GET_HTTP_request()"
 });
 formatter.result({
-  "duration": 168431814,
+  "duration": 144265104,
   "status": "passed"
 });
 formatter.match({
@@ -493,14 +493,14 @@ formatter.match({
   "location": "BikeStepDef.search_response_body_for_non_listed_city(String)"
 });
 formatter.result({
-  "duration": 8215156,
+  "duration": 6349772,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.no_Country_returned()"
 });
 formatter.result({
-  "duration": 36512,
+  "duration": 29127,
   "status": "passed"
 });
 formatter.background({
@@ -524,14 +524,14 @@ formatter.match({
   "location": "BikeStepDef.i_Set_GET_Bike_api_endpoint()"
 });
 formatter.result({
-  "duration": 48819,
+  "duration": 37743,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.i_Set_request_HEADER()"
 });
 formatter.result({
-  "duration": 1413294,
+  "duration": 333119,
   "status": "passed"
 });
 formatter.scenario({
@@ -562,14 +562,14 @@ formatter.match({
   "location": "BikeStepDef.send_a_GET_HTTP_request_with_query_paramters_for_filtering()"
 });
 formatter.result({
-  "duration": 299946914,
+  "duration": 180009747,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.i_receive_only_requested_fields_in_response()"
 });
 formatter.result({
-  "duration": 7297437,
+  "duration": 7927984,
   "status": "passed"
 });
 formatter.background({
@@ -593,14 +593,14 @@ formatter.match({
   "location": "BikeStepDef.i_Set_GET_Bike_api_endpoint()"
 });
 formatter.result({
-  "duration": 38153,
+  "duration": 31999,
   "status": "passed"
 });
 formatter.match({
   "location": "BikeStepDef.i_Set_request_HEADER()"
 });
 formatter.result({
-  "duration": 262147,
+  "duration": 255582,
   "status": "passed"
 });
 formatter.scenario({
@@ -631,7 +631,7 @@ formatter.match({
   "location": "BikeStepDef.send_a_GET_HTTP_request_with_incorrect_url()"
 });
 formatter.result({
-  "duration": 33103077,
+  "duration": 39108242,
   "status": "passed"
 });
 formatter.match({
@@ -644,7 +644,7 @@ formatter.match({
   "location": "BikeStepDef.i_should_receive_Not_found_page_with_response_code(int)"
 });
 formatter.result({
-  "duration": 443475,
+  "duration": 219891,
   "status": "passed"
 });
 });

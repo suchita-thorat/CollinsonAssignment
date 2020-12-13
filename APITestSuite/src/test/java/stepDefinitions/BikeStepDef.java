@@ -39,15 +39,16 @@ public class BikeStepDef {
 	@When("^Send a GET HTTP request$")
 	public void send_a_GET_HTTP_request() {
 		// Make a request to the server by specifying the method Type and the method URL
-		// This will return the Response from the server. Store the response in a variable.
+		// This will return the Response from the server. Store the response in a
+		// variable.
 		response = httpRequest.request(Method.GET, "/networks");
 	}
 
-	// passed expected response code as parameter
+	// passed expected response code as parameter here
 	@Then("^I receive valid Response Code (\\d+)$")
 	public void i_receive_valid_Response_Code(int arg1) {
 		int statusCode = response.getStatusCode();
-		// Assertion for 200 response code
+		// Assertion for successful request response code
 		Assert.assertEquals(statusCode, arg1);
 	}
 
@@ -60,10 +61,11 @@ public class BikeStepDef {
 	@And("^search response body for city (.+)$")
 	public void search_response_body_for_city(String cityname) {
 		int statusCode = response.getStatusCode();
-		// Assertion for 200 response code
+		// Assertion for successful request response code
 		Assert.assertEquals(statusCode, 200);
 		responseBody = response.getBody();
 
+		// Extracting Location Json object and it's fields from response body
 		JSONObject jsonObject = new JSONObject(responseBody.asString());
 		JSONArray jsonArray = jsonObject.getJSONArray("networks");
 		for (int i = 0; i < jsonArray.length(); i++) {
@@ -80,13 +82,14 @@ public class BikeStepDef {
 
 	@Then("^It should be in Country (.+)$")
 	public void it_should_be_in_country(String countryname) {
-		// Validate the country name
+		// Validate the country code
 		Assert.assertEquals(countryname, ExtractedCountry);
 
 	}
 
 	@And("^I get their corresponding (.+) and (.+) in response$")
 	public void i_get_their_corresponding_and_in_response(String latitude, String longitude) {
+		// Assertions for latitude and longitude fields
 		Assert.assertEquals(latitude, Double.toString(ExtractedLatitude));
 		Assert.assertEquals(longitude, Double.toString(ExtractedLongitude));
 	}
@@ -106,16 +109,17 @@ public class BikeStepDef {
 			JSONObject locationJson = json.getJSONObject("location");
 			String ExtractedCity = locationJson.getString("city");
 			if (ExtractedCity.equalsIgnoreCase(arg1)) {
+				// Validation for non listed city Mumbai
+				// it would be missing from response body
+				Assert.assertTrue(false);
 				ExtractedCountry = locationJson.getString("country");
-				ExtractedLatitude = locationJson.getDouble("latitude");
-				ExtractedLongitude = locationJson.getDouble("longitude");
 			}
 		}
 	}
 
 	@Then("^no Country returned$")
 	public void no_Country_returned() {
-		// Assertion for null country if non listed city Mumbai searched
+		// Assertion for country value if city Mumbai(non listed) searched
 		if (ExtractedCountry == null)
 			Assert.assertTrue(true);
 		else
@@ -135,6 +139,7 @@ public class BikeStepDef {
 	public void i_receive_only_requested_fields_in_response() {
 		responseBody = response.getBody();
 
+		// Extracting id,name filter fields from response body
 		JSONObject jsonObject = new JSONObject(responseBody.asString());
 		JSONArray jsonArray = jsonObject.getJSONArray("networks");
 		for (int i = 0; i < jsonArray.length(); i++) {
@@ -144,6 +149,8 @@ public class BikeStepDef {
 			Assert.assertTrue(!json.getString("name").isEmpty());
 
 			// Validation for href field which is not requested
+			// As href is not present in response body we will get exception
+			// Exception is used for assertion
 			Exception exception = null;
 			try {
 				json.getString("href");
@@ -166,13 +173,13 @@ public class BikeStepDef {
 		int statusCode = response.getStatusCode();
 		// Assertion for 404 response code of GET request
 		Assert.assertEquals(statusCode, arg1);
-		
-		//Split response status line to extract response message
+
+		// Split response status line to extract response message
 		String statusLine = response.getStatusLine();
-		String array2[]= statusLine.split(" ", 3);
-		
-		//Assertion for response message
-		Assert.assertEquals("NOT FOUND",array2[2]);	
+		String array2[] = statusLine.split(" ", 3);
+
+		// Assertion for response message
+		Assert.assertEquals("NOT FOUND", array2[2]);
 	}
 
 }

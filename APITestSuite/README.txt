@@ -10,17 +10,17 @@ OR Run using IDE:
 Run Junit runner file TestRunner.java in chosen IDE
 ------------
 Reports:
-Cucumber test reports are generated at below path(copy path in browser to view reports):
+Cucumber test reports are generated at below path(copy path in browser to view the reports):
 userdirectory\APITestSuite\target\cucumber-reports\index.html
 e.g C:\Users\Suchita.Thorat\git\CollinsonAssignment\APITestSuite\target\cucumber-reports\index.html
 ------------
 Other Details:
 Used tagging, Scenario outline(parameterisation), Background steps in Cucumber feature file
-Six scenarios automated and working fine for assignment API
+Six scenarios automated for assignment API
 
-Runner File -
+Runner File:
 Runner is in Junit currently, 
-we can easily convert it to TestNG runner (if needed with below steps) (E2E steps till Jenkins integration mentioned) -
+It can be easily converted to TestNG runner (if needed with below steps)(E2E steps till Jenkins integration) -
 1) Add cucumber-testng dependency in pom.xml 
 2) In TestRunner.java file 
 -comment line @RunWith(Cucumber.class)
@@ -34,7 +34,7 @@ e.g.
 4) testng.xml can be integrated further with maven pom 
 (by configuring it under maven-surefire-plugin)
 5) Any maven project can be integrated to Jenkins 
-by configuring git repository project url and maven goal mvn test
+by configuring git project url and maven goal mvn test
 
 
 
